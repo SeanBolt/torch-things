@@ -1,13 +1,13 @@
 #!/bin/bash
 #
-# Converts to torch7's serialized format
+# Converts Headerless 2d csv files to torch7's serialized format
 #
 
 if [ $# -ne 2 ]
 then
     echo "Usage: $0 in out"
     echo "        Where in is the input csv and out is the torch file"
-    echo "        The input csv must be a headerless 2d csv with the right number of carriage retuens"
+    echo "        The input csv must be a headerless 2d csv with the right number of carriage returns"
     echo " To read into torch, use the following:"
     echo " file=torch.DiskFile(out,'r')"
     echo " csvdat=file:readObject()"
